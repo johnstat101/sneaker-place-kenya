@@ -33,7 +33,9 @@ $(document).ready(function(){
         var newUser = new userInputs(name, sizePrize[size], crustPrize[crust], toppingsPrize[toppings]);
         
         //Append order to summary
-        
-
+        var totals = newUser.userTotal();
+        totals += $(this).text();
+        $("#orderSummary").append("<p id='order'>Pizza size: "+size+" Crust: "+crust+ " Toppings: "+toppings+"</p>");
+        $("#totals").text("TOTAL: "+totals);
     })
 })
