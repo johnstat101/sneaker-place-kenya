@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Online Pizza Shop</title>
 </head>
 
@@ -12,31 +16,36 @@
     <div class="container">
         <div style="background-image: url(./img/img1.jpeg);width: 100%;">
             <h1>Welcome to Pizza Shop</h1>
-            <form action="">
+            <form class="form-group">
+                <label for="name" >Your Name</label>
+                <input type="text" id="userName" required>
+<br>
                 <label for="pizza size">Choose Pizza Size</label>
-                <select name="" id="size" value="">
+                <select name="" id="size" value="" required>
                 <option value="" selected disabled hidden>select here</option>
-                <option value="1">small @400</option>
-                <option value="2">medium @500</option>
-                <option value="3">large @600</option>
+                <option value="small">small @400</option>
+                <option value="medium">medium @500</option>
+                <option value="large">large @600</option>
             </select>
                 <br>
                 <label for="crust">Choose Crust</label>
                 <select name="" id="crust" value="">
                 <option value="" selected disabled hidden>select here</option>
-                <option value="1">crispy @50</option>
-                <option value="2">stuffed @80</option>
-                <option value="3">gluten-free @100</option>
+                <option value="crispy">crispy @50</option>
+                <option value="stuffed">stuffed @80</option>
+                <option value="glutenFree">gluten-free @100</option>
             </select>
                 <br>
                 <label for="toppings">Choose Toppings</label>
                 <select name="" id="toppings" value="">
                 <option value="" selected disabled hidden>select here</option>
-                <option value="1">pepperoni @80</option>
-                <option value="2">mushrooms @60</option>
-                <option value="3">onions @50</option>
-                <option value="4">extra cheese @45</option>
+                <option value="pepperoni">pepperoni @80</option>
+                <option value="mushrooms">mushrooms @60</option>
+                <option value="onions">onions @50</option>
+                <option value="extraCheese">extra cheese @45</option>
             </select>
+            <!-- submit button -->
+            <input type="submit" name="" id="btnAdd" value="Add another order">
             </form>
 
         </div>
