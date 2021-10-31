@@ -31,8 +31,9 @@ $(document).ready(function(){
         var toppings = $("#toppings").val();
 
         var newUser = new userInputs(name, sizePrize[size], crustPrize[crust], toppingsPrize[toppings]);
-        console.log(newUser.userTotal());
+        
+        //Append order to summary
+        
 
     })
-
 })
