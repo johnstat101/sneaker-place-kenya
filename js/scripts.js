@@ -68,7 +68,7 @@ $(document).ready(function(){
         var location = $("#location").val();
 
         //alert user
-        alert(grantTotal)
+        $("#alert p").text("Total plus Delivery Fee: "+(parseInt(grantTotal)+200));
         // alert("Hello "+name+"!, Thank you for shopping with us, your order will be delivered at "+location);
         }
 
