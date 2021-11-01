@@ -1,3 +1,11 @@
 #location{
     display: none;
 }
+#orderSummary{
+    background-color:lightblue;
+    padding: 5px;
+}
+h3{
+    background-color: lightblue;
+    text-align: center;
+}

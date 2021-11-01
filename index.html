@@ -16,8 +16,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-        <div style="background-image: url(./img/img1.jpeg);width: 100%;">
-            <h1>Welcome to Pizza Shop</h1>
+        <div style="background-image: url(./img/deliverly.jpg);width: 100%;">
+            <h3>Welcome to Online Pizza Shop</h3>
                 <label for="name" >Your Name</label>
                 <input type="text" id="userName" required>
 <br>
@@ -47,7 +47,6 @@
             </select>
             <!-- submit button -->
             <br>
-            <input type="reset" name="reset" id="reset">
             <button id="btnAdd">Add to Cart</button>
 
         </div>
@@ -56,15 +55,16 @@
         <div id = "orderSummary">
             <h3>Order Summary</h3>
 
-        </div>
+        
 
         <div id="totals">
-            <p><span id="totals-span"></span></p>
+            <hr>
+            <p></p>
         </div>
 
         <div>
             <input type="checkbox" name="deliverly" id="deliverly">
-            <label for="deliverly">Home Deliverly?(@Kes.200)</label>
+            <label for="deliverly">Get Home Deliverly @KES.200</label>
             <input type="text" name="location" id="location" placeholder="Enter your Location" required>
         
         </div>
@@ -72,9 +72,15 @@
         <div id="checkout">
             <input type="submit" value="Check Out" id="checkoutBtn">
         </div>
+
+        <!-- User Alerts -->
         <div id="alert">
-            <p></p>
+            <hr>
+            <p id="alert1"></p>
+            <p id="alert2"></p>
+            <hr>
         </div>
+    </div>
 
     </div>
     </div>

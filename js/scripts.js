@@ -36,7 +36,7 @@ $(document).ready(function(){
         var total = newUser.userTotal();
 
         if(name>"" && size>""){
-            $("#orderSummary").append("<p id='order'>Pizza size: "+size+" Crust: "+crust+ " Toppings: "+toppings+" @KES. "+"<span id = 'rowTotal'>"+total+"</span>"+"</p>");
+            $("#orderSummary").append("<hr><p id='order'>Pizza size: "+size+" Crust: "+crust+ " Toppings: "+toppings+" @KES. "+"<span id = 'rowTotal'>"+total+"</span>"+"</p>");
         }
 
         //include grand total
@@ -44,7 +44,7 @@ $(document).ready(function(){
         $("p #rowTotal").each(function(){
         grantTotal += +$(this).text()||0;
         });
-        $("#totals p").text("GRAND TOTAL: "+grantTotal);
+        $("#totals p").text("GRAND TOTAL: KES."+grantTotal);
 
         // 
     })
@@ -68,14 +68,15 @@ $(document).ready(function(){
         var location = $("#location").val();
 
         //alert user
-        $("#alert p").text("Total plus Delivery Fee: "+(parseInt(grantTotal)+200));
-        // alert("Hello "+name+"!, Thank you for shopping with us, your order will be delivered at "+location);
+        $("#alert1").text("Total Amount + Delivery Fee: "+(parseInt(grantTotal)+200));
+        $("#alert2").text("Hello "+name+"!, Thank you for shopping with us, your order will be delivered at "+location);
         }
 
         //if home deliverly is not checked
         else if(!$("#deliverly").is(":checked")&&$("p #rowTotal").text()!=""){
         //alert user
-        alert("Hello "+name+"!, Thank you for shopping with us, please pick your order at NAIROBI CBD");
+        $("#alert1").text("Total Amount: "+grantTotal);
+        $("#alert2").text("Hello "+name+"!, Thank you for shopping with us, please pick your order at NAIROBI CBD");
         }
     })
 })
