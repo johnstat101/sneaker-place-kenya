@@ -16,11 +16,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-        <div style="background-image: url(./img/deliverly.jpg);width: 100%;">
+        <div style="background-image: url(./img/img3.jpg);width: 100%;">
             <h3>Welcome to Online Pizza Shop</h3>
-                <label for="name" >Your Name</label>
+            <div id="name">
+                <label id="lblName" >Enter Your Name</label>
                 <input type="text" id="userName" required>
-<br>
+                <hr>
+            </div>
+            <div id = "userInputs">
                 <label for="pizza size">Choose Pizza Size</label>
                 <select name="" id="size" value="" required>
                 <option value="" selected disabled hidden>select here</option>
@@ -28,7 +31,9 @@
                 <option value="medium">medium @500</option>
                 <option value="large">large @600</option>
             </select>
+        </div>
                 <br>
+                <div id = "userInputs">
                 <label for="crust">Choose Crust</label>
                 <select name="" id="crust" value="">
                 <option value="" selected disabled hidden>select here</option>
@@ -36,7 +41,9 @@
                 <option value="stuffed">stuffed @80</option>
                 <option value="glutenFree">gluten-free @100</option>
             </select>
+        </div>
                 <br>
+                <div id = "userInputs">
                 <label for="toppings">Choose Toppings</label>
                 <select name="" id="toppings" value="">
                 <option value="" selected disabled hidden>select here</option>
@@ -45,6 +52,7 @@
                 <option value="onions">onions @50</option>
                 <option value="extraCheese">extra cheese @45</option>
             </select>
+        </div>
             <!-- submit button -->
             <br>
             <button id="btnAdd">Add to Cart</button>
@@ -54,9 +62,7 @@
     <div class="col-md-6">
         <div id = "orderSummary">
             <h3>Order Summary</h3>
-
-        
-
+        </div>
         <div id="totals">
             <hr>
             <p></p>
@@ -64,12 +70,14 @@
 
         <div>
             <input type="checkbox" name="deliverly" id="deliverly">
-            <label for="deliverly">Get Home Deliverly @KES.200</label>
+            <label id="lblDeliverly">Get Home Deliverly @KES.200</label>
+            <br>
             <input type="text" name="location" id="location" placeholder="Enter your Location" required>
         
         </div>
         
         <div id="checkout">
+            <br>
             <input type="submit" value="Check Out" id="checkoutBtn">
         </div>
 
@@ -80,7 +88,7 @@
             <p id="alert2"></p>
             <hr>
         </div>
-    </div>
+    
 
     </div>
     </div>
