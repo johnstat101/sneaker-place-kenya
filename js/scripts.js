@@ -36,13 +36,15 @@ $(document).ready(function(){
         
         //Append row cost to user choice
         var total = newUser.userTotal();
-        $("#orderSummary").append("<p id='order'>Pizza size: "+size+" Crust: "+crust+ " Toppings: "+toppings+" @KES. "+"<span id = 'rowTotal'>"+total+"</span>"+"</p>");
 
+        if(name!=""&&size!=""){
+        $("#orderSummary").append("<p id='order'>Pizza size: "+size+" Crust: "+crust+ " Toppings: "+toppings+" @KES. "+"<span id = 'rowTotal'>"+total+"</span>"+"</p>");
         //include grand total
         var grantTotal = 0;
         $("p #rowTotal").each(function(){
-        grantTotal += +$(this).text()||0;    
+        grantTotal += +$(this).text()||0;
         });
         $("#totals p").text("TOTAL: "+grantTotal);
+    }
     })
 })
