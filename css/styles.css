@@ -1,11 +1,11 @@
-h3{
+h3 {
     background-color: darkblue;
     text-align: center;
     color: white;
     padding: 5px;
 }
 
-label{
+label {
     display: inline-block;
     width: 200px;
     text-align: right;
@@ -13,22 +13,33 @@ label{
     color: white;
 }
 
-#name{
+#name {
     text-align: center;
     width: auto;
     text-align: center;
 }
 
-#lblDeliverly{
+#lblName:after {
+    content: " * ";
+    color: red;
+}
+
+#lblSize:after {
+    content: " * ";
+    color: red;
+}
+
+#lblDeliverly {
     width: auto;
     background-color: lightsteelblue;
     font-weight: bold;
 }
 
-#location{
+#location {
     display: none;
 }
-body{
+
+body {
     background-color: lightgray;
     padding: 5px;
 }
