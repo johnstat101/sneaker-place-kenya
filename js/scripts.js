@@ -43,6 +43,6 @@ $(document).ready(function(){
         $("p #rowTotal").each(function(){
         grantTotal += +$(this).text()||0;    
         });
-        $("#totals").text("TOTAL: "+grantTotal);
+        $("#totals p").text("TOTAL: "+grantTotal);
     })
 })
