@@ -17,6 +17,8 @@ label {
     text-align: center;
     width: auto;
     text-align: center;
+    margin-bottom: 5px;
+    border-bottom: 2px solid white;
 }
 
 #lblName:after {
