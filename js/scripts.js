@@ -12,13 +12,14 @@ function userInputs(name, sizePrize,crustPrize,toppingsPrize){
 
 //Define a prototype function to get totals
 userInputs.prototype.userTotal = function(){
-    return this.sizePrize + this.toppingsPrize + this.crustPrize
+    return this.sizePrize + this.toppingsPrize + this.crustPrize;
 }
 
 // define prices objects
 var sizePrize = {small: 400, medium: 500, large: 600}
 var crustPrize = {crispy: 50, stuffed: 80, glutenFree: 100}
 var toppingsPrize = {pepperoni: 80, mushrooms: 60, onions: 50, extraCheese: 45}
+
 
 // user logic
 $(document).ready(function(){
@@ -32,10 +33,23 @@ $(document).ready(function(){
 
         var newUser = new userInputs(name, sizePrize[size], crustPrize[crust], toppingsPrize[toppings]);
         
-        //Append order to summary
-        var totals = newUser.userTotal();
-        totals += $(this).text();
-        $("#orderSummary").append("<p id='order'>Pizza size: "+size+" Crust: "+crust+ " Toppings: "+toppings+"</p>");
-        $("#totals").text("TOTAL: "+totals);
+        //Append row cost to user choice
+        var total = newUser.userTotal();
+        $("#orderSummary").append("<p id='order'>Pizza size: "+size+" Crust: "+crust+ " Toppings: "+toppings+" @KES. "+"<span id = 'rowTotal'>"+total+"</span>"+"</p>");
+        
+        //include grand total
+        var grantTotal = 0;
+        $("p #rowTotal").each(function(){
+        grantTotal += +$(this).text()||0;    
+        });
+        $("#totals").text("TOTAL: "+grantTotal);
     })
 })
+
+// $(document).ready(function(){
+// var grantTotal = 0;
+// $("#rowTotal").each(function(){
+//     grantTotal += +$(this).text()||0;
+// });
+// $("#totals").text("TOTAL: "+grantTotal);
+// })
