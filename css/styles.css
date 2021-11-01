@@ -41,6 +41,12 @@ label {
     display: none;
 }
 
+#totals {
+    font-weight: bold;
+    background-color: turquoise;
+    text-align: center;
+}
+
 body {
     background-color: lightgray;
     padding: 5px;
