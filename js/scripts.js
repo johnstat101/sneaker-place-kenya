@@ -45,7 +45,28 @@ $(document).ready(function(){
         $("p #rowTotal").each(function(){
         grantTotal += +$(this).text()||0;
         });
-        $("#totals p").text("TOTAL: "+grantTotal);
+        $("#totals p").text("GRAND TOTAL: "+grantTotal);
+
+    })
+})
+
+//Check-out and payment & order deliverly
+$(document).ready(function(){
+    $("#deliverly").click(function(){
+        if($("#deliverly").is(":checked")) $("#location").show();
+            else $("#location").hide();
+    })
     
+    $("#checkoutBtn").click(function(){
+        //Check if homedeliverly is checked//
+        if($("#deliverly").is(":checked")&&$("p #rowTotal").text()!=""&&$("#location").val()!=""){
+        var location = $("#location").val();
+        alert("Hello!, Thank you for shopping with us, your order will be delivered at "+location);
+        }
+
+        //if home deliverly is not checked
+        else if(!$("#deliverly").is(":checked")&&$("p #rowTotal").text()!=""){
+        alert("Hello!, Thank you for shopping with us, please pick your order at NAIROBI CBD");
+        }
     })
 })
