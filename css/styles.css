@@ -51,6 +51,10 @@ label {
     text-align: center;
 }
 
+#orderSummary p {
+    font-size: 14px;
+}
+
 body {
     background-color: lightgray;
     padding: 5px;
