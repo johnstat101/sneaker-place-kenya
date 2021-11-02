@@ -18,11 +18,15 @@
             <div class="col-md-6">
                 <div style="background-image: url(./img/img3.jpg);width: 100%;">
                     <h3>Welcome to Online Pizza Shop</h3>
+
+                    <!-- collect user name -->
                     <div id="name">
                         <label id="lblName">Enter Your Name</label>
                         <input type="text" id="userName" required>
                         <hr>
                     </div>
+
+                    <!-- collect user pizza size preference -->
                     <div id="userInputs">
                         <label id="lblSize">Choose Pizza Size</label>
                         <select name="" id="size" value="" required>
@@ -33,6 +37,8 @@
                         </select>
                     </div>
                     <br>
+
+                    <!-- Collect user Crust preference -->
                     <div id="userInputs">
                         <label for="crust">Choose Crust</label>
                         <select name="" id="crust" value="">
@@ -43,6 +49,8 @@
                 </select>
                     </div>
                     <br>
+
+                    <!-- collect user inputs for Toppings -->
                     <div id="userInputs">
                         <label for="toppings">Choose Toppings</label>
                         <select name="" id="toppings" value="">
@@ -53,19 +61,26 @@
                     <option value="extraCheese">extra cheese @45</option>
                 </select>
                     </div>
-                    <!-- submit button -->
+
+                    <!-- Add submit button -->
                     <br>
                     <button id="btnAdd">Add to Cart</button>
                 </div>
             </div>
+
+            <!-- Add column to embed user order summary -->
             <div class="col-md-6">
                 <div id="orderSummary">
                     <h3>Order Summary</h3>
                 </div>
+
+                <!-- create an empty div to display totals -->
                 <div id="totals">
                     <hr>
                     <p></p>
                 </div>
+
+                <!-- Add deliverly information -->
                 <div>
                     <input type="checkbox" name="deliverly" id="deliverly">
                     <label id="lblDeliverly">Get Home Deliverly @KES.200</label>
@@ -73,9 +88,11 @@
                     <input type="text" name="location" id="location" placeholder="Enter your Location" required>
                 </div>
 
+                <!-- Add a button for checking out -->
                 <div id="checkout">
                     <br>
                     <input type="submit" value="Check Out" id="checkoutBtn">
+                    <button onclick="window.location.reload();">reset</button>
                 </div>
 
                 <!-- User Alerts -->
