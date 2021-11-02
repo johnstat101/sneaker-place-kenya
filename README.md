@@ -1,9 +1,8 @@
-DELANI-STUDIO-WEBSITE
+SNEAKER-PLACE-KENYA
 By John Kimani (author)
 
 ## Description
 
-online-pizza-shop is an online web application that targets to widen customer base by providing an online pizza purchase services. Customer has an opportunity to order different sizes of pizza with one or more toppings.  additionally, customer is able to choose his/her location for home deliverly.
 
 *website screenshot*
 
@@ -16,7 +15,7 @@ online-pizza-shop is an online web application that targets to widen customer ba
 
 ##### Setup Instructions and Installation
 
-- clone this repository to your deskop. https://github.com/johnstat101/online-pizza-shop.git
+- clone this repository to your deskop. https://github.com/johnstat101/sneaker-place-kenya.git
 - Navigate to index.html and,
 - open in your browser
 
