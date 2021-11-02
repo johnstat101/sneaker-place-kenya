@@ -24,11 +24,15 @@ label {
 #lblName:after {
     content: " * ";
     color: red;
+    padding: 5px;
+    font-weight: bold;
 }
 
 #lblSize:after {
-    content: " * ";
+    content: "*";
     color: red;
+    padding: 5px;
+    font-weight: bold;
 }
 
 #lblDeliverly {
