@@ -55,6 +55,10 @@ label {
     font-size: 14px;
 }
 
+#priceSpan {
+    background-color: turquoise;
+}
+
 body {
     background-color: lightgray;
     padding: 5px;
